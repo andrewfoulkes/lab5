@@ -10,8 +10,15 @@ $(document).ready(function() {
  */
 function initializePage() {
 	console.log("Javascript connected!");
+		$(".friendName").click(function(e) {
+			e.preventDefault();
+			$(".friendName").text("An anagram of their name!");
+		});
+		$('#fID').click(sF);
 }
-
+function sF(event) {
+	$(this).text("Changed text");
+}
 function anagrammedName(name) {
 	// Thanks, Internet Anagram Server!
 	
